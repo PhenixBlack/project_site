@@ -259,7 +259,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     min-height: inherit;
-    background-image: url('https://i.postimg.cc/nh71xLyT/Layer-57-removebg-preview-1.png');
+    background-image: url('images/Layer_57-removebg-preview1.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left -225px;
@@ -339,20 +339,20 @@ body {
 }
 
 .categories-item:nth-child(1) {
-    background-image: url('https://i.postimg.cc/wjPdKrLr/Layer-43.png');
+    background-image: url('images/Layer43.png');
 }
 
 .categories-item:nth-child(2) {
-    background-image: url('https://i.postimg.cc/K8T0zpCw/Rectangle-30.png');
+    background-image: url('images/Rectangle30.png');
 }
 
 .categories-item:nth-child(3) {
-    background-image: url('https://i.postimg.cc/VNB49rfF/Rectangle-30-1.png');
+    background-image: url('images/Rectangle_kids.png');
 }
 
 .categories-item:last-child {
     max-width: 100%;
-    background-image: url('https://i.postimg.cc/DyJgjYf0/Rectangle-20-2.png');
+    background-image: url('images/Rectangle20.png');
 }
 
 .categories-item:last-child {
