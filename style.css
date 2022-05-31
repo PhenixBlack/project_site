@@ -781,19 +781,7 @@ body {
 }
 
 /* ======= subscribe ======= */
-.subscribe {
-  width: 100%;
-  min-height: 448px;
-  padding: 20px;
-  box-sizing: border-box;
-  background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)),
-    url('https://i.postimg.cc/tJVR1VWX/Layer-41.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #F3F3F3;
-  flex-wrap: wrap;
-}
+
 
 .subscribe-info {
   display: flex;
@@ -805,7 +793,7 @@ body {
   margin: 0 40px 0 0;
 }
 
-.subscribe-info-avatar {
+.subscribe-info-photo {
   display: block;
   width: 96px;
   height: 96px;
@@ -819,7 +807,7 @@ body {
   min-height: 448px;
   padding: 20px;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)),
+  background-image: linear-gradient(rgba(244, 244, 244, 0.4), rgba(244, 244, 244, 0.4)),
     url('images/photo_subscribe.jpg');
   background-size: cover;
   background-position: center;
