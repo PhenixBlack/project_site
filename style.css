@@ -1289,3 +1289,132 @@ line-height: 19px;
 .paginating:first-child(1):active a{
   color: #EF5B70;
 }
+/*======== product page ============*/
+/* ==========central product block========*/
+.central-product-card {
+  width: 100%;
+  border: 1px solid #000;
+  height: 777px;
+}
+
+.central-card-category {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.central-category-title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding: 12px 0 12px 0;
+}
+
+.central-category-txt {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  position: relative;
+  padding: 12px 0 12px 0;
+}
+
+.central-category-txt::before {
+  content: "";
+  display: block;
+  width: 63px;
+  height: 3px;
+  background-color: #F16D7F;
+  position: absolute;
+  top: 0;
+  left: 85px;
+}
+
+.product-item-info-txt {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  width: 555px;
+  margin: 48px 0 0 0;
+}
+
+.product-item-info-price {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+    margin: 1px 2px;
+    padding: 5px 5px;
+    display: inline-block;
+    text-decoration: none;
+    color:grey;
+    font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+}
+.paginating:first-child(1):hover a{
+    color: #EF5B70;
+}
+.paginating:first-child(1):active a{
+  color: #EF5B70;
+  margin: 32px 0 62px 0;
+}
+
+#switch-filter {
+  display: none;
+}
+
+#switch-filter:checked~.filter-list-wrp {
+  display: block;
+}
+
+.product-item-options {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 48px 0;
+}
+
+.product-item-options-txt {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-transform: uppercase;
+  padding: 0 22px 0 22px;
+}
+
+.products-item-info-btn {
+  display: block;
+  width: 100%;
+  max-width: 211px;
+  margin: 0 0 65px 475px;
+  padding: 14.5px;
+  background-color: #fff;
+  border: 2px solid #F26376;
+  box-sizing: border-box;
+  color: #F26376;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  text-align: center;
+  word-break: break-all;
+}
+
+/*=======carousel=======*/
