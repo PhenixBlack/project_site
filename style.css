@@ -150,7 +150,7 @@ body {
   left: 30px;
   color: #fff;
   font-size: 16px;
-  font-family: Arial;
+  font-family: Lato;
   text-transform: capitalize;
 }
 
@@ -1942,7 +1942,7 @@ body {
   max-width: 160px;
   height: 57px;
   background-color: #F16D7F;
-  font-family: 'Lato';
+  font-family: Lato;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
