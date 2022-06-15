@@ -224,6 +224,7 @@ body {
 
 #menu-switch:checked~.menu-list {
   display: block;
+  z-index: 1000;
 }
 
 #menu-switch:checked~.page-header-banner {
@@ -241,7 +242,7 @@ body {
   position: absolute;
   top: 75px;
   right: 0;
-  z-index: 20;
+  z-index: 1000;
 }
 
 .menu-list-close-btn {
@@ -419,6 +420,11 @@ body {
   min-height: 764px;
   margin: 0 0 65px 0;
   background-color: #F1E4E6;
+}
+
+.banner-product{
+  min-height: 148px;
+  background-color: #F8F3F4;
 }
 
 .banner-wrp {
@@ -1155,7 +1161,7 @@ body {
   box-sizing: border-box;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  z-index: 1000;
+  z-index: 999;
 }
 
 .filter-list {
@@ -1269,7 +1275,7 @@ body {
   border: none;
   background-color: transparent;
   position: relative;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .list-size-btn-title {
@@ -1351,7 +1357,7 @@ body {
   margin: 0 0 6px 0;
   position: relative;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1390,6 +1396,11 @@ body {
   margin: 0 auto;
   z-index: -1000;
   padding: 0 0 35px 0;
+}
+.carousel-item >img{
+  border-style: none;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-btn-prew {
@@ -1558,7 +1569,7 @@ body {
   line-height: 17px;
   text-align: center;
   color: #5E5E5E;
-  width: 555px;
+  max-width: 555px;
   margin: 48px 0 0 0;
 }
 
@@ -1638,6 +1649,7 @@ body {
   margin: 0 auto;
   min-height: inherit;
   height: 148px;
+  background-color: #F8F3F4;
 }
 
 .page-top-block-right {
@@ -1672,6 +1684,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-content: flex-start;
+  margin: 96px 0 0 0;
 }
 
 .cart-info-product {
@@ -1767,12 +1780,13 @@ body {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  margin: 0 0 128px 0;
 }
 
 .shipping-adress-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 57px;
+  margin: 0 0 57px 10px;
 }
 
 .form-line-txt {
@@ -1868,7 +1882,7 @@ body {
 /*=========registration-page======*/
 .registration-block {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 60px auto;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -1878,7 +1892,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 360px;
-  margin: 0 115px 0 0;
+  margin: 0 115px 0 10px;
 }
 
 .registration-form-title {
@@ -1888,12 +1902,13 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+  margin: 0 0 10px 0;
 }
 
 .registration-line-txt {
   height: 48px;
   width: 360px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 0 0 0 10px;
   font-family: Lato;
   font-style: normal;
@@ -2031,6 +2046,9 @@ body {
     height: 214px;
     padding: 39px 25px 0;
   }
+  .registration-block{
+    margin: 40px auto;
+  }
 
   .registration-form {
     margin: 0 22px 0 10px;
@@ -2096,7 +2114,7 @@ body {
     width: 40px;
   }
   .filter-list-wrp{
-    width: 195px;
+    width: 161px;
   }
   .filter-txt{
     padding: 0 22px 0 27px;
@@ -2132,4 +2150,63 @@ body {
   #catalog-list-item .product-item:nth-child(3){
     display: block;
   }
+  .registration-block{
+    flex-direction: column;
+  }
+  .registration-line-txt{
+    width: 349px;
+  }
+.menu-list{
+  max-width: 215px;
+}
+.cart-info-order{
+  flex-direction: column;
+}
+.cart-info-product-card >img{
+  max-width: 144px;
+  max-height: 188px;
+}
+.cart-product-title{
+  font-size: 16px;
+  margin: 0 0 3px 0;
+}
+.cart-product-txt{
+  font-size: 14px;
+}
+.cart-info-product-text{
+  margin: 0 0 0px 25px;
+}
+.info-product-btn{
+  font-size: 12px;
+  width: 177px;
+  margin: 0 5px 45px;
+}
 } 
+@media (min-width:769px) and (max-width:1140px){
+.banner-title{
+  margin: 0 0 87px 0;
+}
+#catalog-item-list{
+  justify-content: space-evenly;
+}
+.cart-info{
+  flex-direction: column;
+}
+}
+@media (min-width:376px) and (max-width:767px){
+  .banner-title{
+    margin: 0 0 41px 250px;
+    font-size: 36px;
+  }
+  .list-size-btn-title svg{
+    position: absolute;
+    top: 40%;
+    left: 100%;
+  }
+  .cart-info-order{
+    flex-direction: column;
+  }
+  .registration-block{
+    flex-direction: column;
+  }
+}
